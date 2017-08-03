@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+ 		ul li {
+    		display:inline;
+    		margin: 16px;
+		}
+		#buttons {
+			margin-bottom: 20px;
+
+		}
+		#gameArea {
+			background-image: url("../assets/images/HpBackground.jpg");
+			padding-bottom: 200px;
+			padding-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container-fluid">
+			<h1 class="display-3">Harry Potter Hangman</h1>
+			<p>Select a letter from the alphabet below to guess the word. </p>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="gameArea">
+		<div class="row">
+			<div class="btn-group col-xs-12" id="buttons"></div> 
+		</div>
+		<div class="row">
+			<div class="col-xs-12" id="hold"></div>
+		</div>
+		<div class="alert alert-info center-block">
+			<strong id="mylives"></strong>
+		</div>
+		<div class="row">
+			<input class="btn btn-default center-block" name="refresh" type="button" value="New Game" onClick="location.reload()">
+		</div>
+	</div>
+	<script type="text/javascript" src="../assets/javascript/game.js"></script>
+</body>
+</html>
+
+
+
